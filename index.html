@@ -4,12 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="theme-color" content="#ffffff"> 
+  <title>AirPods Max</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#006f8f">
 </head>
 <body>
   <header class="header">
@@ -40,11 +47,11 @@
           <span class="title--air">Air</span><span class="title--pod">Pod</span><span class="title--s">S</span><span class="title--m">M</span><span class="title--ax">AX</span>
         </h1>
         <div class="header__content-images">
-          <!-- <img src="images/airpods-black.png" alt="AirPods Max black"> -->
-          <img src="images/airpods-blue.png" alt="AirPods Max blue">
-          <!-- <img src="images/airpods-green.png" alt="AirPods Max green">
-          <img src="images/airpods-red.png" alt="AirPods Max red">
-          <img src="images/airpods-white.png" alt="AirPods Max white"> -->
+          <img class="content-item color--black" src="images/airpods-black.png" alt="AirPods Max black">
+          <img class="content-item color--blue content-item__active" src="images/airpods-blue.png" alt="AirPods Max blue">
+          <img class="content-item color--green" src="images/airpods-green.png" alt="AirPods Max green">
+          <img class="content-item color--red" src="images/airpods-red.png" alt="AirPods Max red">
+          <img class="content-item color--white" src="images/airpods-white.png" alt="AirPods Max white">
         </div>
       </div>
     </div>
@@ -60,21 +67,21 @@
           The ultimate personal audio experience.
         </p>
         <div class="choose-color__list">
-          <button class="choose__color-btn">
+          <button class="choose__color-btn" data-button="color--black">
             <img src="images/btn-black.png" alt="AirPods Max black">
           </button>
-          <button class="choose__color-btn">
+          <button class="choose__color-btn" data-button="color--white">
             <img src="images/btn-white.png" alt="AirPods Max white">
           </button>
-          <button class="choose__color-btn">
+          <button class="choose__color-btn" data-button="color--green">
             <img src="images/btn-green.png" alt="AirPods Max green">
           </button>
-          <button class="choose__color-btn">
+          <button class="choose__color-btn" data-button="color--red">
             <img src="images/btn-red.png" alt="AirPods Max red">
           </button>
-          <!-- <button class="choose__color-btn">
+          <button class="choose__color-btn choose__color-btn--active" data-button="color--blue">
             <img src="images/btn-blue.png" alt="AirPods Max blue">
-          </button> -->
+          </button>
         </div>
       </div>
     </section>
@@ -98,11 +105,11 @@
               The telescoping arms expand and stay in any position you want, allowing you to maintain fit and isolation.
             </p>
           </div>
-          <img src="images/side-blue.jpg" alt="AirPods Max blue">
-          <!-- <img src="images/side-red.jpg" alt="AirPods Max red">
-          <img src="images/side-green.jpg" alt="AirPods Max green">
-          <img src="images/side-white.jpg" alt="AirPods Max white">
-          <img src="images/side-black.jpg" alt="AirPods Max black"> -->
+          <img class="content-item color--blue content-item__active" src="images/side-blue.jpg" alt="AirPods Max blue">
+          <img class="content-item color--red" src="images/side-red.jpg" alt="AirPods Max red">
+          <img class="content-item color--green" src="images/side-green.jpg" alt="AirPods Max green">
+          <img class="content-item color--white" src="images/side-white.jpg" alt="AirPods Max white">
+          <img class="content-item color--black" src="images/side-black.jpg" alt="AirPods Max black">
         </div>
       </div>
     </section>
@@ -114,11 +121,11 @@
         <p class="case__text">
           When stored in the sleek and lightweight Smart Case , AirPods Max enter a low-power state to save energy.
         </p>
-        <img src="images/case-blue.jpg" alt="AirPods Max blue">
-        <!-- <img src="images/case-red.jpg" alt="AirPods Max red">
-        <img src="images/case-green.jpg" alt="AirPods Max green">
-        <img src="images/case-white.jpg" alt="AirPods Max white">
-        <img src="images/case-black.jpg" alt="AirPods Max black"> -->
+        <img class="content-item color--blue content-item__active" src="images/case-blue.jpg" alt="AirPods Max blue">
+        <img class="content-item color--red" src="images/case-red.jpg" alt="AirPods Max red">
+        <img class="content-item color--green" src="images/case-green.jpg" alt="AirPods Max green">
+        <img class="content-item color--white" src="images/case-white.jpg" alt="AirPods Max white">
+        <img class="content-item color--black" src="images/case-black.jpg" alt="AirPods Max black">
         <h2 class="energy__title main__title">
           Stayin' alive, stayin' alive.
         </h2>
